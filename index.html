@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | QR code component</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <!-- SEO -->
+    <meta name="description" content="Frontend Mentor | QR code component">
+    <!-- Tailwind CSS - CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'White': 'hsl(0, 0%, 100%)',
+                        'Light-Gray': 'hsl(212, 45%, 89%)',
+                        'Grayish-Blue': 'hsl(220, 15%, 55%)',
+                        'Dark-Blue': 'hsl(218, 44%, 22%)'
+                    },
+                    fontFamily: {
+                        'Outfit': ['Outfit', 'sans-serif'],
+                    },
+                    fontSize: {
+                        'normal': ['18px', {
+                            fontWeight: '700',
+                        }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main class="bg-Light-Gray min-h-screen">
+        <section class="flex p-16 md:max-w-2xl md:mx-auto md:px-40">
+            <div class="flex flex-col rounded-2xl gap-6 p-4 items-center text-center mx-auto bg-White shadow-md">
+                <img class="rounded-2xl" src="/images/image-qr-code.png" alt="QR code">
+                <div class="flex flex-col gap-2 px-8 pb-6 font-Outfit">
+                    <h1 class="text-normal text-Dark-Blue">Improve your front-end skills by building projects</h1>
+                    <p class="text-sm font-normal text-Grayish-Blue">Scan the QR code to visit Frontend Mentor and take
+                        your
+                        coding skills to
+                        the next
+                        level</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
